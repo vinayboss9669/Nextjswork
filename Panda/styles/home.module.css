@@ -1,0 +1,64 @@
+/* filepath: d:\Next Js\panda\styles\home.module.css */
+.blog-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.blog-description {
+    font-size: 16px;
+    color: #666;
+}
+
+.blogItem {
+    padding: 16px;
+    margin-bottom: 24px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mainnav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 16px 0; */
+    width: 100%;
+    /* max-width: 1200px; */
+}
+
+.mainnav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 15px;
+    width: calc(100% - 30px);
+    background-color: #acacef;
+    border-radius: 0.5rem;
+    padding: 8px 16px;
+    box-sizing: border-box;
+}
+
+.title{
+    color: #2d2d89;
+}
+.mainnav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .mainnav ul {
+        gap: 16px;
+    }
+}
